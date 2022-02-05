@@ -70,6 +70,7 @@ const UserTransactionsList = () => {
 							<TableBody>
 								{rows
 									.filter((val) => {
+										let value;
 										if (
 											val.description
 												.toLowerCase()
@@ -77,8 +78,9 @@ const UserTransactionsList = () => {
 													searchItem.toLocaleLowerCase()
 												)
 										) {
-											return val;
+											value = val;
 										}
+										return value;
 									})
 									.slice(
 										page * rowsPerPage,

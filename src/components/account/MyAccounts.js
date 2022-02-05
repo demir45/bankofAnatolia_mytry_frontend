@@ -66,6 +66,7 @@ const MyAccounts = () => {
 					<TableBody>
 						{rows
 							.filter((val) => {
+								let value;
 								if (
 									val.description
 										.toLowerCase()
@@ -73,8 +74,9 @@ const MyAccounts = () => {
 											searchItem.toLocaleLowerCase()
 										)
 								) {
-									return val;
+									value = val;
 								}
+								return value;
 							})
 							.slice(
 								page * rowsPerPage,

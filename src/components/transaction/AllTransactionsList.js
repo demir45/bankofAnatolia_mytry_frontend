@@ -26,7 +26,7 @@ const AllTransactionsList = (props) => {
 	const [rowsPerPage, setRowsPerPage] = useState(10);
 
 	const rows = props.alltransactions;
-	
+
 	const handleChangePage = (event, newPage) => {
 		setPage(newPage);
 	};
@@ -71,6 +71,7 @@ const AllTransactionsList = (props) => {
 							<TableBody>
 								{rows
 									.filter((val) => {
+										let value;
 										if (
 											val.description
 												.toLowerCase()
@@ -78,8 +79,9 @@ const AllTransactionsList = (props) => {
 													searchItem.toLocaleLowerCase()
 												)
 										) {
-											return val;
+											value = val;
 										}
+										return value;
 									})
 									.slice(
 										page * rowsPerPage,

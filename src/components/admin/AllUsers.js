@@ -110,6 +110,7 @@ const AllUsers = (props) => {
 						<TableBody>
 							{rows
 								.filter((val) => {
+									let value;
 									if (
 										val.firstName
 											.toLowerCase()
@@ -117,8 +118,9 @@ const AllUsers = (props) => {
 												searchItem.toLocaleLowerCase()
 											)
 									) {
-										return val;
+										value = val;
 									}
+									return value;
 								})
 								.slice(
 									page * rowsPerPage,
