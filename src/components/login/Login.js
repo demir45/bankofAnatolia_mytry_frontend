@@ -172,6 +172,7 @@ const Login = () => {
 							toast.error('Login Unsuccessful', {
 								position: toast.POSITION.TOP_CENTER,
 							});
+							hideLoader();
 							actions.resetForm();
 							actions.setSubmitting(false);
 						});
