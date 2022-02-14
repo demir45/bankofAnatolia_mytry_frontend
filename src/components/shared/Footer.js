@@ -21,7 +21,7 @@ const Footer = () => {
 								<div className="widget widget-address">
 									<Link to="/">
 										<img
-											src="assets/img/logo-prl.png"
+											src="assets/img/logoAnatolia.png"
 											alt="logo"
 										/>
 									</Link>
@@ -137,7 +137,7 @@ const Footer = () => {
 						</div>
 						<div className="col-lg-6 align-self-center">
 							<div className="copy-right text-lg-right text-center">
-								@ 2021, LinnBank all right reserved
+								@ 2022, BankOfAnatolia all right reserved
 							</div>
 						</div>
 					</div>

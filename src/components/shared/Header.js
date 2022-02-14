@@ -18,12 +18,12 @@ const Header = () => {
 							<Link to={'/'}>
 								<img
 									style={{
-										marginTop: '10px',
+										// marginTop: '10px',
 										width: '100%',
 										minWidth: '170px',
 										maxWidth: '190px',
 									}}
-									src="assets\img\logo.png"
+									src="assets\img\logoAnatolia.png"
 									alt="img"
 								/>
 							</Link>
