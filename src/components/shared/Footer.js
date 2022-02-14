@@ -21,6 +21,10 @@ const Footer = () => {
 								<div className="widget widget-address">
 									<Link to="/">
 										<img
+											style={{
+												marginLeft: '-10px',
+												marginTop: '-13px',
+											}}
 											src="assets/img/logoAnatolia.png"
 											alt="logo"
 										/>
